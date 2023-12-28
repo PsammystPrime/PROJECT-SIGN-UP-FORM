@@ -2,6 +2,15 @@ const submit = document.querySelector('.create_button')
 const para = document.querySelector('.para')
 const pass1 = document.querySelector('.error')
 const pass2 = document.querySelector('.error2')
+const email = document.getElementById("Email");
+
+email.addEventListener("input", (event) => {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I am expecting an email address!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
 
 submit.addEventListener('click', function (e) {
     if (pass1.value1===pass2.value) {
