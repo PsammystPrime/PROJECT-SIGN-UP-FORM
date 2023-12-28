@@ -103,8 +103,11 @@ h1{
     top:370px ;
 }
 input:invalid{
-border-color: red;
+border: 2px solid red;
 }
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  }
 input:valid{
     border-color: green;
 }
