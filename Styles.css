@@ -6,6 +6,8 @@ body{
 .odin{
 width: 80px;
 height: 80px;
+opacity: 75%;
+background: #E5E7EB;
 }
 
 .logo{
@@ -17,6 +19,7 @@ height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 75%;
 
 }
 .text_logo{
