@@ -12,19 +12,19 @@ email.addEventListener("input", () => {
   }
 });
 
-submit.addEventListener('click', function () {
+submit.addEventListener('click', function (e) {
   
-   if (pass1.value1===pass2.value) {
+   if (pass1.value===pass2.value) {
         para.textContent= 'Registration Successful, welcome'
    } else
 
-   if (pass1.value1 ==! pass2.value) {
+   if (pass1.value ==! pass2.value) {
          para.textContent= '*Passwords do not match'
     } else
    if (pass1.value==='' && pass2.value==='') {
     para.textContent ='Fill all fields'
     }
-
+    e.preventDefault()
 })
 
 
